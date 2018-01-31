@@ -16,6 +16,7 @@ class Song
     return song
   end
   
+<<<<<<< HEAD
   def self.new_by_name(song_name_string)
     song = self.new
     song.name = song_name_string
@@ -74,5 +75,12 @@ class Song
   def self.destroy_all
     @@all = []
   end
+=======
+  def self.create_by_name(song_name)
+    song = self.new(song_name)
+    song.save
+    return song
+  end
+>>>>>>> 26cc078bb48cfbb6248fd1ce10781e1b2acb394a
 
 end
